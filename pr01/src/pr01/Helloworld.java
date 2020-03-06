@@ -1,6 +1,6 @@
 package pr01;
 
-public class MainClass 
+public class Helloworld 
 {
 	//main을 입력하고 ctrl + space를 누른 후 main(String[] args)를 선택하면 자동완성
 	public static void main(String[] args) 
