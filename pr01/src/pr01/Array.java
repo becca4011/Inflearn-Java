@@ -1,5 +1,6 @@
 package pr01;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array 
@@ -64,8 +65,47 @@ public class Array
 		System.out.printf("%s의 점수 : %.2f\n", name[4], (double)score[4]);
 		
 		double ave = (double)(score[0] + score[1] + score[2] + score[3] + score[4]) / 5;
-		System.out.printf("-------------------------\n평점 : %.2f", ave);
+		System.out.printf("-------------------------\n평점 : %.2f \n\n", ave);
 		
 		scan.close();
+		
+		
+		/* 배열 기본속성 */
+		
+		int[] arr3 = {10, 20, 30, 40, 50, 60};
+		int[] arr4 = null;
+		int[] arr5 = null;
+		
+		// 배열 길이
+		System.out.println("arr3.length : " + arr3.length);
+		
+		// 배열 요소 출력
+		System.out.println("arr3 : " + Arrays.toString(arr3));
+		
+		// 배열 요소 복사
+		arr5 = Arrays.copyOf(arr3, arr3.length);
+		System.out.println("arr5 : " + Arrays.toString(arr5));
+		
+		// 배열 레퍼런스
+		arr4 = arr3;
+		System.out.println("arr3 : " + arr3);
+		System.out.println("arr4 : " + arr4);
+		System.out.println("arr5 : " + arr5 + "\n"); // 배열 요소를 복사하더라도 요소만 같고 주소가 같지는 않음
+		
+		
+		/* 다차원 배열 */
+		
+		int[][] arrMul = new int[3][2]; // 3행 2열
+		
+		arrMul[0][0] = 10;
+		arrMul[0][1] = 100;
+		arrMul[1][0] = 20;
+		arrMul[1][1] = 200;
+		arrMul[2][0] = 30;
+		arrMul[2][1] = 300;
+		
+		System.out.println("arrMul[0] : " + Arrays.toString(arrMul[0])); // 10 100
+		System.out.println("arrMul[1] : " + Arrays.toString(arrMul[1])); // 20 200
+		System.out.println("arrMul[2] : " + Arrays.toString(arrMul[2])); // 30 300
 	}
 }
