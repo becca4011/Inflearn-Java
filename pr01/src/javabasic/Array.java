@@ -1,4 +1,4 @@
-package pr01;
+package javabasic;
 
 import java.util.Arrays;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package pr01;
+package javabasic;
 
 public class DataType 
 {
